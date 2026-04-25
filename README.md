@@ -61,4 +61,4 @@ This plugin cannot suppress OpenXR loader messages emitted before BepInEx plugin
 
 ## License
 
-No license has been selected for this repository.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
