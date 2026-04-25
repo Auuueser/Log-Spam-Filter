@@ -1,0 +1,13 @@
+bin/
+obj/
+github_build_bin/
+github_build_obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.tmp
+*.log
+
+# Local game and mod-manager paths should be provided at build time.
+Directory.Build.props
