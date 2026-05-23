@@ -4,8 +4,7 @@ All notable changes to this project are documented here.
 
 ## 1.2.8 - 2026-05-23
 
-- Added exact-match filtering for the repeated Unity cascade shadow atlasing failure message.
-- Kept the new rule constrained to the known message text to avoid suppressing unrelated lighting or rendering diagnostics.
+- Added filtering for repeated Unity cascade shadow atlasing failure logs.
 
 ## 1.2.7 - 2026-04-25
 
