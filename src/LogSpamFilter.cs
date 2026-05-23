@@ -8,10 +8,10 @@ using UnityEngine;
 
 namespace LogSpamFilter
 {
-    [BepInPlugin("yourname.logspamfilter", "Log Spam Filter", "1.2.7")]
+    [BepInPlugin("yourname.logspamfilter", "Log Spam Filter", "1.2.8")]
     public class Plugin : BaseUnityPlugin
     {
-        private const string PluginVersion = "1.2.7";
+        private const string PluginVersion = "1.2.8";
         internal static ManualLogSource Log;
 
         private void Awake()
@@ -23,7 +23,7 @@ namespace LogSpamFilter
                 BepInExListenerFilter.Install();
                 Harmony.CreateAndPatchAll(typeof(DebugLogPatches), "yourname.logspamfilter");
                 Logger.LogInfo($"Log Spam Filter loaded. Version: {PluginVersion}");
-                Logger.LogInfo("Changelog: Expanded spam suppression for Stingray, HoarderBug, Bracken, Cadaver, MouthDog, OpenBodyCams, rope, targeting, goUp, spawn planner, BoxCollider, and audio spatializer spam.");
+                Logger.LogInfo("Changelog: Expanded spam suppression for Stingray, HoarderBug, Bracken, Cadaver, MouthDog, OpenBodyCams, rope, targeting, goUp, spawn planner, BoxCollider, audio spatializer, and cascade shadow atlasing spam.");
             }
             catch (Exception ex)
             {
@@ -224,7 +224,8 @@ namespace LogSpamFilter
             "L",
             "M",
             "T",
-            "True, False"
+            "True, False",
+            "Cascade Shadow atlasing has failed, only one directional light can cast shadows at a time"
         };
 
         private static readonly string[] ContainsRules =

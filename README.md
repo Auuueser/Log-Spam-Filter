@@ -13,7 +13,7 @@ The plugin only filters log output. It does not modify enemy AI, spawning, netwo
 
 ## Current Version
 
-`1.2.7`
+`1.2.8`
 
 ## Filter Coverage
 
@@ -27,7 +27,7 @@ The current rule set includes repeated logs from these areas:
 - OpenBodyCams cosmetic collection timing output
 - Spawn planner probability debug output
 - Rope, targeting, and boolean debug messages
-- Common Unity warning spam for negative collider scale and missing audio spatializer setup
+- Common Unity warning spam for negative collider scale, missing audio spatializer setup, and cascade shadow atlasing failures
 
 ## Requirements
 
